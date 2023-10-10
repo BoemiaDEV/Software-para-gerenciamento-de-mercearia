@@ -14,8 +14,6 @@ class DaoCategoria:
 
         cls.categoria = list(map(lambda x: x.replace('\n',''), cls.categoria))
 
-        print(cls.categoria)
-
         cat = []
         for i in cls.categoria:
             cat.append(Categoria(i))
@@ -136,3 +134,8 @@ class DaoFuncionario:
         for i in cls.funcionario:
             funcionario.append(Venda(Produtos(i[0], i[1], i[2]), i[3], i[4], i[5] ))
             return funcionario
+
+
+
+# DaoCategoria.salvar('Verduras')
+# DaoCategoria.salvar('Legumes')
